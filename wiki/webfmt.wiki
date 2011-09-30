@@ -4,10 +4,9 @@
    It is available to picture management, file flash, file download, etc,to avoid redundant files,and can help to use the sample file in any pages, and reduce the disk space usage in web server.<br>
    It's very secure , customized interfaces are provided for caller.For example: rename uploaded file automatically, no matter user has logged or not ,and so on.<br>
 
+   <a href="http://www.webfmt.com/download.html" target="_blank">Download</a><br>
+   Contact us  Email:webfmt@gmail.com<br> 
 
-<a href="http://www.webfmt.com/download.html" target="_blank">Download</a><br>
-Contact us:
-            Email:webfmt@gmail.com<br>
 =Features=
 * Folder tree navigation: intuitive for all users. <br>
 * Quality image thumbnails, makes it quickly to find file.<br> 
