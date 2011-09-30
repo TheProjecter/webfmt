@@ -1,0 +1,131 @@
+/* 
+    Document   : menu
+    Created on : 2011-4-25, 11:42:06
+    Author     : Berlin.Qin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.menustyle
+{
+    position: relative;
+    width: 99%;
+    /*font-weight: bold;*/
+    font-size: 12px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.menustyle:after
+{ /*Add margin between menu and rest of content in Firefox*/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.menustyle ul
+{
+    border: 1px solid #BBB;
+    width: 100%;
+    /*background: url(../images/menubg2.gif) center center repeat-x; /*THEME CHANGE HERE*/
+    padding: 1px 0;
+    margin: 0;
+    text-align: left; /*set value to "left", "center", or "right"*/
+}
+
+.menustyle ul li
+{
+    display: inline;
+}
+
+.menustyle ul li a
+{
+    color: #494949;
+    padding: 4px 7px;
+    margin: 0;
+    text-decoration: none;
+    /*border-right: 1px solid #B5E2FE; /*THEME CHANGE HERE*/
+}
+
+.menustyle ul li a:hover, .menustyle ul li a.selected
+{ 
+  background: url(../images/menubg2-over.gif) center center repeat-x;
+}
+
+
+.dropmenudiv
+{
+     position:absolute;
+    top: 0;
+    border: 1px solid #BBB; /*THEME CHANGE HERE*/
+    border-bottom-width: 0;
+    font-size: 12px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    line-height:18px;
+    z-index:100;
+    background-color: white;
+    width: 200px;
+    visibility: hidden;
+}
+
+.dropmenudiv a
+{
+    width: auto;
+    display: block;
+    text-indent: 3px;
+    border-bottom: 1px solid #BBB; /*THEME CHANGE HERE*/
+    padding: 2px 0;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    color: black;
+}
+
+* html .dropmenudiv a
+{ /*IE only hack*/
+  width: 100%;
+}
+
+.dropmenudiv a:hover
+{ /*THEME CHANGE HERE*/
+  background-color: #F0F0F0;
+}
+
+
+.popmenu
+{
+    position:absolute;
+    border: 2px solid #BBB;
+    font-size: 12px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    line-height:18px;
+    z-index:100;
+     width: 150px;
+    padding: 2px 2px 2px 2px;
+    background-color: menu;
+}
+.popmenu .menuItem
+{
+    padding: 2px 2px 2px 2px;
+    font-weight: 200;
+    background-color: menu;
+    font: menu;
+    border: 1px solid buttonface;
+    cursor: pointer;
+}
+.popmenu .menuMouseover
+{
+    background-color: menu;
+    border: 1px solid #6A93D4;
+ 
+}
+.popmenu  .menuSeparator
+{
+    width: 98%;
+    background-color: #DEDEDE;
+}

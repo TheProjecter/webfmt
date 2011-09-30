@@ -1,0 +1,87 @@
+/*
+Darko Bunic
+http://www.redips.net/
+Mat, 2011.
+*/
+
+/* dialog box */
+
+.fbisdialog
+{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    z-index: 32750;
+    margin: auto;
+    background: none repeat scroll 0% 0% rgb(51, 51, 51);
+    opacity: 0.75;
+}
+/* title bar */
+ .dialogtitle
+{
+    text-align: left;
+    font-size: 12px;
+    cursor:move;
+    background:blue;
+    height: 22px;
+}
+.dialogbody
+{
+    text-align: center;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding:.5em;
+}
+.dialogfrm
+{
+    background:#eee;
+    opacity:1.0;
+    min-width:26em;
+}
+/* dialog buttons */
+.fbisdialog input
+{
+    color: white;
+    background-color: #6A93D4;
+    border: 1px #ccc solid;
+    /* width: 65px;
+     height: 20px;*/
+    margin: 18px 5px 10px 0px;
+    /*font-size: 10px;*/
+}
+
+
+/* shaded div */
+.dialogshade
+{
+    position: absolute;
+    left: 0pt;
+    top: 0pt;
+    width: 100%;
+    height: 100%;
+    z-index: 32700;
+    background: none repeat scroll 0% 0% black;
+    filter:alpha(opacity=60);
+    -ms-filter:"alpha(opacity=60)";
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity:0.6;
+}
+.dialogtable
+{
+    background-color: #eee;
+    border-width: 0px 2px 2px 2px;
+    border-color: #6A93D4;
+    border-style: solid;
+    text-align: center;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/* reset table cell padding */
+.dialogtable td 
+{
+    padding: 0px;
+}
+
