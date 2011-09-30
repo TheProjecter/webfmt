@@ -1,0 +1,342 @@
+/* 
+    Document   : filemanage
+    Created on : 2011-4-22, 18:40:31
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body.resizing {
+    cursor: e-resize;
+}
+/*
+分拆栏定义
+*/
+.vsplitter {
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 6px;
+    float: left;
+    text-align: center;
+    background-color: #ccc;
+    /*cursor: e-resize;*/
+}
+/* Optional styles */
+.left_panel
+{
+    /*padding: 1em;*/
+    /*background-color: #F5F5F5;*/
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.content_panel {
+    /*padding: 1em;*/
+    height: 100%;
+    margin-left: 34%;
+    /*background-color: #F5F5F5;*/
+}
+/*status bar 定义*/
+.statusbar
+{
+    position:absolute;
+    bottom:0px;
+
+    background:#CECECE;
+    width:100%; 
+    height:28px;
+    display: none;
+}
+.statusbar input
+{
+    background-color: #6A93D4;
+    border: 1px #ccc solid;
+     width: 65px;
+     height: 20px;
+    margin: 4px 5px 10px 0px;
+    font-size: 12px;
+}
+/* tree 定义 */
+
+.stree {
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    /*white-space: nowrap;*/
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.stree img {
+    border: 0px;
+    vertical-align: middle;
+}
+.stree a
+{
+    color: #333;
+    text-decoration: none;
+}
+.stree a.caption, .stree a.nodeSelected
+{
+    white-space: nowrap;
+    text-decoration:   none;
+    padding: 1px 2px 1px 2px;
+}
+.stree a.caption:hover, .stree a.nodeSelected:hover
+{
+    color: #333;
+    text-decoration:   none;
+    /*text-decoration: underline;*/
+
+}
+.stree a.caption:link, .stree a.caption:visited
+{
+    color: #333;
+    text-decoration:   none;
+}
+.stree a.nodeSelected
+{
+    background-color: #c0d2ec;
+}
+.stree .clip
+{
+    overflow: hidden;
+}
+
+/*dataview 定义*/
+.fileview
+{
+    position: relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+    -moz-user-select:none;
+    -moz-user-select:-moz-none;
+    -khtml-select:none;
+    font-family: "宋体",黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    overflow:auto; /*自动产生滚动条*/
+}
+
+/*每个文件的item属性*/
+.fileview .fileview_item,.fileview .fileview_item_selected
+{
+    border: 1px solid gray;
+    #position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    #float: left;
+}
+.fileview .fileview_item .item_text
+{
+    width: 80px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.fileview .fileview_item_selected .item_text
+{
+    color: white;
+    cursor:pointer;
+    background-color:#0000FF;
+    white-space:normal;
+    word-break:break-all;
+    width: 100%;
+    overflow:hidden;
+}
+/*上传文件定义*/
+
+
+.uploaderprogress
+{
+    /*希望窗口有边框*/
+    border: 4px solid blue;
+    /*希望窗口宽度和高度固定，不要太大
+    width: 400px;
+    height: 400px;*/
+    /*希望控制窗口的位置*/
+    position: absolute;  /*绝对定位*/
+    /*希望窗口开始时不可见*/
+    display:none;
+    /*filter:alpha(opacity=50);
+    -ms-filter:"alpha(opacity=50)";
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity:0.5;*/
+    z-index:1002;
+    /*border-bottom:2px solid red;*/
+    font-size: 12px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+}
+/*控制标题栏的样式*/
+.uploaderprogress .title
+{
+    /*控制标题栏的背景色*/
+    background-color: blue;
+    /*控制标题栏中文字的颜色*/
+    color: white;
+    /*控制标题栏的左内边距*/
+    padding-left:2px;
+    font-size: 14px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    height: 20px;
+}
+.fbisloading
+{
+    /*border: 1px solid gray;*/
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: 宋体,黑体,Verdana, Geneva, Arial, Helvetica, sans-serif;
+    z-index: 2000;
+}
+#fbispreview
+{
+    position: absolute;
+    height: auto;
+    text-align: center;
+    line-height: 0;
+    color: #EEEEEE;
+    font: 86% 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1000;
+}
+#fbispreview img,#fbispreview object
+{
+    width: auto;
+    height: auto;
+}
+#fbispreview a img
+{ 
+    border: none;
+}
+
+#OutImageContainer
+{
+    position: relative;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+#ImageContainer
+{
+    padding: 10px;
+}
+
+
+#previewhovernav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 10;
+}
+#ImageContainer>#previewhovernav
+{
+    left: 0;
+}
+#previewhovernav a
+{ 
+    outline: none;
+}
+
+#prevLink, #nextLink
+{
+    width: 49%;
+    height: 100%;
+    /*background-image: url(data:image/gif;base64,AAAA);*/
+    /* Trick IE into showing hover */
+    display: block;
+}
+#prevLink
+{
+    left: 0;
+    float: left;
+}
+
+#nextLink
+{
+    /*right: 0;*/
+    float: right;
+}
+
+#prevLink:hover, #prevLink:visited:hover
+{
+    background: url(../images/prevlabel.gif) left 15% no-repeat;
+}
+#nextLink:hover, #nextLink:visited:hover
+{
+    background: url(../images/nextlabel.gif) right 15% no-repeat;
+}
+
+#imagedatacontainer
+{
+    font: 10px Verdana, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 1.4em;
+    overflow: auto;
+    width: 100%	;
+}
+
+#imageData
+{
+    padding:0 10px;
+    color: #666;
+}
+#imageData #previewDetails
+{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+#imageData #previewcaption
+{
+    font-weight: bold;
+}
+#imageData #previewNumber
+{
+    display: block;
+    clear: left;
+    padding-bottom: 1.0em;
+}
+#imageData #previewfoot
+{
+    clear:right;
+    width: 66px;
+    float: right;
+    padding-bottom: 0.7em;
+    outline: none;
+}
+
+#fbispreviewoverlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=80);
+    -ms-filter:"alpha(opacity=80)";
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity:0.5;
+}
