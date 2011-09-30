@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="keywords" content="open source,ajax file upload,ajax file manager for browsers,powerfull ,easy use,js tree,js menu,js splitter,js upload button"/>
+        <meta name="description" content="a powerfull and easy to use ajax file manager  for website,open source,js tree,js menu,js splitter,js upload button"/>
+        <meta name="Author" content="by Berlin.Qin;email:webfmt@gmail.com;QQ:webfmt@gmail.com;" />
+        <title>Webfmt v1.0 | Demo Page | a powerfull and easy to use ajax file manager</title>
+        <!--<script type="text/javascript" src="ckeditor/ckeditor.js"></script>-->
+        <script src="webfmt/webfmt.js"   type="text/javascript"></script>
+    </head>
+    <body>
+        <script  type="text/javascript" language="JavaScript">
+            function webfmt_callback(urls,folder)
+            {
+                var obj=fbis.getobj("status");
+                if(obj)
+                {
+                    obj.innerHTML="selected files:"+urls+"<br>selected folder:"+folder;
+                }
+            }
+            var pararm={"basedir":"/upfile",
+                "ftype":["gif","png","jpg","zip"],
+                "selmod":"multiselect",
+                "showok":1,
+                "maxszie":2*1024*1024,
+                "returnid":"selfile",
+                "folderid":"selfolder","ReturnFunc":"webfmt_callback","lang":"en"
+            };
+        </script>
+        <div>
+            <h1><a href="http://www.webfmt.com/">Webfmt<em>v1.0</em></a></h1>
+            <p>By Berlin Qin</p>
+        </div>
+        <div>
+            <div style="float:left;">
+                <h2>Example one</h2>
+                <p>selected files:</p>
+                <input id="selfile"  type="text" name="selfile" value="" size="50">
+                <p>selected folder</p>
+                <input id="selfolder" type="text" name="selfolder" value="">
+                <a href="javascript:CWebFmt.show(pararm,600,800,true);">brows</a>
+                <p>call back function excute result:</p>
+                <div id="status"  style="color: darkorange;height:100px;width:400px;border: 1px solid blue;"></div>
+            </div>
+            
+            <div style="clear: both"></div>
+            <div>
+                <h2>How to Use:</h2>
+                <h3>Part 1 - Setup</h3>
+                <ol>
+                    <li>
+                        You will need to include the Javascript files in your header.
+                        <pre><code>
+    &lt;script type=&quot;text/javascript&quot; src=&quot;webfmt.js&quot;&gt;&lt;/script&gt;
+                        </code></pre>
+                    </li>
+                </ol>
+                <h3>Part 2 -Page call</h3>
+                <ol>
+                    <li>Create a callback function . For example:
+                        <pre>
+                        <code>
+    function webfmt_callback(urls,folder)
+    {
+        var obj=fbis.getobj("status");
+        if(obj)
+        {
+            obj.innerHTML="selected files:"+urls+"&#60;br&#62;selected folder:"+folder;
+        }
+    }
+                        </code>
+                        </pre>
+                        <em>Optional: </em>Use the <code>function</code>, can  get the user selects files and folder.
+                    </li>
+                    <li>Prepare the params. For example:
+                        <h4>Js Code:</h4>
+                        <pre><code>
+    var pararm={
+          "basedir":"/upfile",               //folder tree root path
+          "ftype":["gif","png","jpg","zip"],  //allow to upload file type
+          "selmod":"multiselect",           //if "multiselect",allow to select multiple files at once,else only one file.
+          "showok":1,            //if 1,show "ok" and "cancle" buttons on window footer,else nothing
+          "maxszie":2*1024*1024, //allow to upload file max size
+          "returnid":"selfile",  //through element accept return selected files
+          "folderid":"selfolder",//through element accept return selected folder
+          "ReturnFunc":"webfmt_callback",
+          "lang":"en"
+           };
+                        </code></pre>
+                        <h2>CWebFmt object</h2>
+                        <pre>
+    CWebFmt object has a function "show"
+    CWebFmt.show=function(param,height,width,IsPop)
+
+    Parameters:
+    param         parame object
+    height        window height
+    width         window width
+    IsPop         if true,show in popup window,else local window
+                            </pre>
+                        <h4>Html code</h4>
+                        <pre><code>
+    &#60;p&#62;selected files:&#60;/p&#62;
+    &#60;input id="selfile"  type="text" name="selfile" value="" size="100"&#62;
+    &#60;p&#62;selected folder&#60;/p&#62;
+    &#60;input id="selfolder" type="text" name="selfolder" value=""&#62;
+    &#60;a href="javascript:CWebFmt.show(pararm,600,800,true);"&#62brows&#60;/a&#62;
+    &#60;p>call back function excute result:&#60;/p&#62;
+    &#60;div id="status"&#62;
+    &#60;/div&#62;
+                        </code></pre>
+                    </li>
+                </ol>
+                <h3>Part 3 -Html online editor integration</h3>
+                <ol>
+                    <li>Ckeditor integration . For example:
+                        <pre><code>
+    &#60;textarea cols="80" id="editor_kama" name="content" rows="5" cols="10"&#62;&#60;/textarea&#62;
+    &#60;script type="text/javascript"&#62;
+    var bparams={"showok":true};
+    var imgparams={"showok":true,ftype:["jpg","png","gif","swf"]};
+    var fparams={"showok":true,ftype:["swf"]};
+    //&#60;![CDATA[
+    CKEDITOR.replace('content',
+    {
+    "filebrowserBrowseUrl": "webfmt/webfmt.php?params='"+urlEncode(base64encode(JSON.stringify(bparams)))+"'",
+    "filebrowserImageBrowseUrl": "webfmt/webfmt.php?params='"+urlEncode(base64encode(JSON.stringify(imgparams)))+"'",
+    "filebrowserFlashBrowseUrl": "webfmt/webfmt.php?params='"+urlEncode(base64encode(JSON.stringify(fparams)))+"'"
+    });
+    //]]&#62;
+    &#60;/script&#62;
+                       </code></pre>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24161659-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
