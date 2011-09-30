@@ -1,11 +1,11 @@
 #labels Featured,Phase-Design
 =What is Webfmt=
-   Web File Management Tool (Webfmt) is a powerful and easy to use Ajax file manager for web browsers. It's simple interface,makes it intuitive and quick to learn for all kinds of users, from advanced professionals to Internet beginners.<br>
-   It is available to picture management, file flash, file download, etc,to avoid redundant files,and can help to use the sample file in any pages, and reduce the disk space usage in web server.<br>
-   It's very secure , customized interfaces are provided for caller.For example: rename uploaded file automatically, no matter user has logged or not ,and so on.<br>
+      Web File Management Tool (Webfmt) is a powerful and easy to use Ajax file manager for web browsers. It's simple interface,makes it intuitive and quick to learn for all kinds of users, from advanced professionals to Internet beginners.<br>
+      It is available to picture management, file flash, file download, etc,to avoid redundant files,and can help to use the sample file in any pages, and reduce the disk space usage in web server.<br>
+      It's very secure , customized interfaces are provided for caller.For example: rename uploaded file automatically, no matter user has logged or not ,and so on.<br>
 
-   <a href="http://www.webfmt.com/download.html" target="_blank">Download</a><br>
-   Contact us  Email:webfmt@gmail.com<br> 
+     <a href="http://www.webfmt.com/download.html" target="_blank">Download</a><br>
+     Contact us  Email:webfmt@gmail.com<br> 
 
 =Features=
    * Folder tree navigation: intuitive for all users. <br>
@@ -29,7 +29,7 @@
    * Tested in IE7.0+,Firefox 3.5+, Safari3.5+, Chrome12.0+,Opera10.0+<br>
 
 =Interface=
-   The webfmt interface is clear and easy for end users, it is easy to learn and use. Most features can be handled with a mouse click and context menus.  
+   The webfmt interface is clear and easy for end users, it is easy to learn and use. Most features can be handled with a mouse click and context menus.<br>  
    The screenshot of webfmt is as follows:<br>
 <img src="http://webfmt.googlecode.com/svn/images/webfmt.gif" alt="">
 
