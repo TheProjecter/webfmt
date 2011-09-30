@@ -8,38 +8,38 @@
    Contact us  Email:webfmt@gmail.com<br> 
 
 =Features=
-* Folder tree navigation: intuitive for all users. <br>
-* Quality image thumbnails, makes it quickly to find file.<br> 
-* Multi-language support.<br>
-* Sensitive context menus for files and folders.<br> 
-* Full user control:to create, rename, copy, move and delete folders and files.<br>
-* Full developer control: customized interfaces are provided for developer.<br>
-* Lightweight interface.<br>
-* No page refreshes: quick responses.<br>
-* Secure: all uploaded files are checked by configure, uploaded files can be  renamed automatically, upload file size and type can be restricted by configure.<br> 
-* Full source code included for the server side.<br>
-* Multiple files upload at once in firefox4.0+, Chrome12.0+<br>
-* Drag-and-drop file upload in firefox4.0+, Chrome12.0+<br>
-* Uploads are cancellable<br> 
-* No external dependencies<br> 
-* Doesn't use Flash<br>
-* Fully working with https<br>
-* Support single or multiple files selected by param.<br>
-* Support to show "ok,cancel" button by param<br>
-* Tested in IE7.0+,Firefox 3.5+, Safari3.5+, Chrome12.0+,Opera10.0+<br>
+   * Folder tree navigation: intuitive for all users. <br>
+   * Quality image thumbnails, makes it quickly to find file.<br> 
+   * Multi-language support.<br>
+   * Sensitive context menus for files and folders.<br> 
+   * Full user control:to create, rename, copy, move and delete folders and files.<br>
+   * Full developer control: customized interfaces are provided for developer.<br>
+   * Lightweight interface.<br>
+   * No page refreshes: quick responses.<br>
+   * Secure: all uploaded files are checked by configure, uploaded files can be  renamed automatically, upload file size and type can be restricted by configure.<br> 
+   * Full source code included for the server side.<br>
+   * Multiple files upload at once in firefox4.0+, Chrome12.0+<br>
+   * Drag-and-drop file upload in firefox4.0+, Chrome12.0+<br>
+   * Uploads are cancellable<br> 
+   * No external dependencies<br> 
+   * Doesn't use Flash<br>
+   * Fully working with https<br>
+   * Support single or multiple files selected by param.<br>
+   * Support to show "ok,cancel" button by param<br>
+   * Tested in IE7.0+,Firefox 3.5+, Safari3.5+, Chrome12.0+,Opera10.0+<br>
 
 =Interface=
- The webfmt interface is clear and easy for end users, it is easy to learn and use. Most features can be handled with a mouse click and context menus.  
-The screenshot of webfmt is as follows:<br>
+   The webfmt interface is clear and easy for end users, it is easy to learn and use. Most features can be handled with a mouse click and context menus.  
+   The screenshot of webfmt is as follows:<br>
 <img src="http://webfmt.googlecode.com/svn/images/webfmt.gif" alt="">
 
 =Security Tips= 
-* Many important security settings are contained in file config.php. Make sure all of them are reviewed and understood.<br> 
-* All file operations are limited in the base dir.User does't switch other.<br>
-* Customized renaming function is provided for developer except default.<br>
-* Can limited uploaded file types by configure.<br>
-* Can limited uploaded file size by configure.<br>
-* All uploaded files are checked, files not qualified for the configurations will be refused or rejected. Files can be renamed automatically.<br>
-* Can filer before and after creating,deleting,renaming files or folders by hook api.<br>
+   * Many important security settings are contained in file config.php. Make sure all of them are reviewed and understood.<br> 
+   * All file operations are limited in the base dir.User does't switch other.<br>
+   * Customized renaming function is provided for developer except default.<br>
+   * Can limited uploaded file types by configure.<br>
+   * Can limited uploaded file size by configure.<br>
+   * All uploaded files are checked, files not qualified for the configurations will be refused or rejected. Files can be renamed automatically.<br>  
+   * Can filer before and after creating,deleting,renaming files or folders by hook api.<br>
 
 <a href="http://www.webfmt.com" title=""><strong>Learn more</strong></a>
