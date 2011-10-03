@@ -31,7 +31,7 @@
 =Interface=
    The webfmt interface is clear and easy for end users, it is easy to learn and use. Most features can be handled with a mouse click and context menus.<br>  
    The screenshot of webfmt is as follows:<br>
-<img src="http://webfmt.googlecode.com/svn/images/webfmt.gif" alt="">
+[http://www.webfmt.com http://webfmt.googlecode.com/svn/images/webfmt.gif"]
 
 =Security Tips= 
    * Many important security settings are contained in file config.php. Make sure all of them are reviewed and understood.<br> 
