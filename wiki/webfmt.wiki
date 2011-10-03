@@ -1,6 +1,6 @@
 #labels Featured,Phase-Design
 =What is Webfmt=
-      Web File Management Tool (Webfmt) is a powerful and easy to use Ajax file manager for web browsers. It's simple interface,makes it intuitive and quick to learn for all kinds of users, from advanced professionals to Internet beginners.<br>
+      *Web File Management Tool* (Webfmt) is a powerful and easy to use *Ajax file manager* for web browsers. It's simple interface,makes it intuitive and quick to learn for all kinds of users, from advanced professionals to Internet beginners.<br>
       It is available to picture management, file flash, file download, etc,to avoid redundant files,and can help to use the sample file in any pages, and reduce the disk space usage in web server.<br>
       It's very secure , customized interfaces are provided for caller.For example: rename uploaded file automatically, no matter user has logged or not ,and so on.<br>
 
